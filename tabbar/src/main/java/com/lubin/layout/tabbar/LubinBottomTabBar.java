@@ -17,24 +17,24 @@ import java.util.List;
  * This is a bottom navigation bar small control, the upper part of the small icon,
  * the lower part of the text, similar to WeChat, click listen, location Settings, and so on.
  */
-public class BottomTabBar extends LinearLayout implements View.OnClickListener {
+public class LubinBottomTabBar extends LinearLayout implements View.OnClickListener {
 
     private OnTabBarListener listener;
     private int tabCount;
     private View oldSelectView;
 
 
-    public BottomTabBar(Context context) {
+    public LubinBottomTabBar(Context context) {
         super(context);
         initBottomTabbar();
     }
 
-    public BottomTabBar(Context context, AttributeSet attrs) {
+    public LubinBottomTabBar(Context context, AttributeSet attrs) {
         super(context, attrs);
         initBottomTabbar();
     }
 
-    public BottomTabBar(Context context, AttributeSet attrs, int defStyleAttr) {
+    public LubinBottomTabBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initBottomTabbar();
     }
@@ -48,7 +48,7 @@ public class BottomTabBar extends LinearLayout implements View.OnClickListener {
      *
      * @param item Item index to select
      */
-    public BottomTabBar setCurrentItem(int item) {
+    public LubinBottomTabBar setCurrentItem(int item) {
         if (item < tabCount && item >= 0) {
             View view = getChildAt(item);
 
@@ -79,7 +79,7 @@ public class BottomTabBar extends LinearLayout implements View.OnClickListener {
      * @param listener 事件回调
      * @return
      */
-    public BottomTabBar initData(List<TabItem> tabList, OnTabBarListener listener) {
+    public LubinBottomTabBar initData(List<TabItem> tabList, OnTabBarListener listener) {
         this.listener = listener;
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT);
         params.weight = 1;

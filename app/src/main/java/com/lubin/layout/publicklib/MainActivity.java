@@ -3,7 +3,7 @@ package com.lubin.layout.publicklib;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.lubin.layout.tabbar.BottomTabBar;
+import com.lubin.layout.tabbar.LubinBottomTabBar;
 import com.lubin.layout.tabbar.OnTabBarListener;
 import com.lubin.layout.tabbar.TabItem;
 import com.lubin.layout.tabbar.TabbarHelper;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnTabBarListener, TabbarHelper.OnTabChangedListener<Integer> {
-    private BottomTabBar tabBar;
+    private LubinBottomTabBar tabBar;
     private List<TabItem> list;
     private TabbarHelper<Integer> helper;
 

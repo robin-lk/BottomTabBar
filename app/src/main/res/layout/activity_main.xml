@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_above="@id/tab_bar" />
 
-    <com.lubin.layout.tabbar.BottomTabBar
+    <com.lubin.layout.tabbar.LubinBottomTabBar
         android:id="@+id/tab_bar"
         android:layout_width="match_parent"
         android:layout_height="45dp"
