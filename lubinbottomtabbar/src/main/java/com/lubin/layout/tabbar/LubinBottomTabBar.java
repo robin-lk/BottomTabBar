@@ -108,12 +108,12 @@ public class LubinBottomTabBar extends LinearLayout implements View.OnClickListe
     public void onClick(View v) {
         if (v instanceof TabItemLayout) {
             if (listener != null) {
-                listener.onTabClick(((TabItemLayout) v).getPosition(), (TabItem) v.getTag());
+                listener.onTabClick(((TabItemLayout) v).getPosition(), (TabItem) v.getTag(),((TabItemLayout) v).getmIcon());
                 setCurrentItem(((TabItemLayout) v).getPosition());
             }
         } else {
             if (listener != null) {
-                listener.onTabClick(-1, (TabItem) v.getTag());
+                listener.onTabClick(-1, (TabItem) v.getTag(),((TabItemLayout) v).getmIcon());
                 setCurrentItem(0);
             }
 

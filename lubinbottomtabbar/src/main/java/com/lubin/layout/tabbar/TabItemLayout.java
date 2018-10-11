@@ -70,4 +70,8 @@ public class TabItemLayout extends LinearLayout {
     public void setPosition(int position) {
         this.position = position;
     }
+
+    public ImageView getmIcon() {
+        return mIcon;
+    }
 }

@@ -2,6 +2,7 @@ package com.lubin.layout.publicklib;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.lubin.layout.tabbar.LubinBottomTabBar;
 import com.lubin.layout.tabbar.OnTabBarListener;
@@ -33,8 +34,9 @@ public class MainActivity extends AppCompatActivity implements OnTabBarListener,
 
     }
 
+
     @Override
-    public void onTabClick(int position, TabItem item) {
+    public void onTabClick(int position, TabItem item, View icon) {
 
     }
 
