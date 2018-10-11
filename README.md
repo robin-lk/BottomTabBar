@@ -13,14 +13,14 @@ implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
 ## (一)单独使用LubinBottomTabBar
 
 ### 准备资源
- ** drawable:用于图标
+ * drawable:用于图标
 ```xml
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/ic_shopping_basket_black_24dp" android:state_selected="true" />
     <item android:drawable="@drawable/ic_shopping_basket_wrigth_24dp" />
 </selector>
 ``` 
- ** string:底部图标下的文字 ‘name值自定义’
+ * string:底部图标下的文字 ‘name值自定义’
  ```xml
 <resources>
 
@@ -33,7 +33,7 @@ implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
 </resources>
 
 ```
- **color：文字改变颜色 ‘name值自定义’
+ * color：文字改变颜色 ‘name值自定义’
  ```xml
  <resources>
  
@@ -76,7 +76,7 @@ class MyActivyty{
 
 ```
 
- **  LubinBottomTabBar
+ * LubinBottomTabBar
  
  ```markdown
     /**
@@ -97,7 +97,7 @@ class MyActivyty{
     public LubinBottomTabBar setCurrentItem(int item)
 
 ```
- ** TabItem（子项资源赋值）
+ * TabItem（子项资源赋值）
  
 ```markdown
     /**
