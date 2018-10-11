@@ -10,9 +10,9 @@
 ```markdown
 implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
 ```
-## (一)单独使用LubinBottomTabBar
+### (一)单独使用LubinBottomTabBar
 
-### 准备资源
+#### 准备资源
  * drawable:用于图标
 ```xml
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
@@ -44,7 +44,7 @@ implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
 </resources>
 
 ```
-### xml布局中添加
+#### xml布局中添加
 
 ```xml
     <com.lubin.layout.tabbar.LubinBottomTabBar
@@ -52,7 +52,7 @@ implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
         android:layout_width="match_parent"
         android:layout_height="45dp" />
 ```
-### java（Activity或Fragment）中使用
+#### java（Activity或Fragment）中使用
 
 ```java
 class MyActivyty{
@@ -76,7 +76,7 @@ class MyActivyty{
 
 ```
 
- * LubinBottomTabBar
+ * LubinBottomTabBar(方法调用)
  
  ```markdown
     /**
@@ -95,6 +95,26 @@ class MyActivyty{
      * @param item Item index to select
      */
     public LubinBottomTabBar setCurrentItem(int item)
+    
+    回调的监听事件
+    
+    /**
+     * 子项点击事件监听回调
+     * Item click the event callback
+     *
+     * @param position 选中项id
+     * @param item     选中项item
+     */
+    void onTabClick(int position, TabItem item, View icon);
+
+    /**
+     * 选中事件回调
+     * Select the event callback
+     *
+     * @param position 选中项id
+     * @param item     选中项item
+     */
+    void onTabSelect(int position, TabItem item);
 
 ```
  * TabItem（子项资源赋值）
