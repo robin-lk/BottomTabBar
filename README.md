@@ -7,11 +7,11 @@
 ## 快速使用
 
 * [![](https://img.shields.io/badge/version-v0.5.1-519dd9.svg)](https://bintray.com/lubin/LubinBottomTabBar/LubinBottomTabBar)
-[![](https://img.shields.io/badge/download-v0.5.1-green.svg)](https://bintray.com/lubin/LubinBottomTabBar/LubinBottomTabBar)
+[![](https://img.shields.io/badge/download-v0.5.2-green.svg)](https://bintray.com/lubin/LubinBottomTabBar/LubinBottomTabBar)
 ![](https://img.shields.io/badge/author-Lubin-red.svg)
 
 ```groovy
-implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
+implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.2'
 ```
 ### (一)单独使用LubinBottomTabBar
 
@@ -99,8 +99,8 @@ class MyActivyty{
      */
     public LubinBottomTabBar setCurrentItem(int item)
     
-    回调的监听事件
-    
+//    回调的监听事件
+
     /**
      * 子项点击事件监听回调
      * Item click the event callback
@@ -133,13 +133,15 @@ class MyActivyty{
      * @param txtColor 文字颜色
      * @param extra    额外信息
      */
-    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @Size float txtSize, @ColorRes int[] txtColor, String extra)
-    
+        
     public TabItem(@StringRes int txtItem, @DrawableRes int icItem, String extra)
+    
+    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @Size float txtSize, String extra) 
 
     public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @ColorRes int[] txtColor, String extra)
     
-    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @Size float txtSize, String extra) 
+    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @Size float txtSize, @ColorRes int[] txtColor, String extra)
+
 
 ```
 
