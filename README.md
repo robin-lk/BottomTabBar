@@ -3,7 +3,6 @@
    这是一个底部导航栏小控件，上部分是小图标，下部是文字，类似微信，有点击监听、定位设置等。
    This is a bottom navigation bar small control, the upper part of the small icon,the lower part of the text, similar to WeChat, click listen, location Settings, and so on.
    
-   
    ![](img/GIF001.gif)
 ## 快速使用
 
@@ -162,3 +161,30 @@ class MyActivyty{
      */
     public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @Size float txtSize, @ColorRes int[] txtColor, String extra)
 ```
+
+### (二)配合TabbarHelper使用LubinBottomTabBar
+  TabbarHelper是fragment切换帮助管理工具
+  
+  ````cmake
+    //创建
+    
+    tabbarHelper = new TabbarHelper<>(this, getSupportFragmentManager(), R.id.layout_conter, this);
+    //add 第一个参数int，从0逐加，add个数与TabItem个数要对应好；第二个参数按照规则(Fragment.clss,string类型)
+    tabbarHelper.add(0, new TabbarHelper.Tab<Integer>(HomeFragment.class, R.string.bottom_bar_home))
+            .add(1, new TabbarHelper.Tab<Integer>(ShoppingFragment.class, R.string.bottom_bar_shoppping))
+            .add(2, new TabbarHelper.Tab<Integer>(HomeFragment.class, R.string.bottom_bar_home))
+            .add(3, new TabbarHelper.Tab<Integer>(HomeFragment.class, R.string.bottom_bar_home))
+            .add(4, new TabbarHelper.Tab<Integer>(MineFragment.class, R.string.bottom_bar_mine));
+            
+            
+    //在LubinBottomTabBar的监听中调用
+    @Override
+    public void onTabSelect(int position,TabItem item) {
+        helper.performClickMenu(position);
+    }
+
+````
+##### 感谢
+
+ 设计时参考了
+     https://www.jianshu.com/p/60096b338dd2?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation文章
