@@ -6,9 +6,11 @@
    ![](img/GIF001.gif)
 ## 快速使用
 
+* ![](https://img.shields.io/badge/version-v0.5.1-519dd9.svg)
+
 * gradle引用
 
-```markdown
+```groovy
 implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
 ```
 ### (一)单独使用LubinBottomTabBar
@@ -79,7 +81,7 @@ class MyActivyty{
 
  * LubinBottomTabBar(方法调用)
  
- ```markdown
+ ```java
     /**
      * 必须最先调用
      * It has to be called first
@@ -120,7 +122,7 @@ class MyActivyty{
 ```
  * TabItem（子项资源赋值）
  
-```markdown
+```java
 
     /**
      * 加载数据
@@ -153,7 +155,7 @@ class MyActivyty{
         android:layout_above="@id/tab_bar" />
 ```
   ````markdown
-    //创建要在LubinBottomTabBar initData() 之前完成
+    //创建LubinBottomTabBar initData() 之前完成
     //R.id.layout_conter  FrameLayout布局id
     tabbarHelper = new TabbarHelper<>(this, getSupportFragmentManager(), R.id.layout_conter, this);
     
