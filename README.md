@@ -2,7 +2,9 @@
 
    这是一个底部导航栏小控件，上部分是小图标，下部是文字，类似微信，有点击监听、定位设置等。
    This is a bottom navigation bar small control, the upper part of the small icon,the lower part of the text, similar to WeChat, click listen, location Settings, and so on.
- 
+   
+   
+   ![](img/GIF001.gif)
 ## 快速使用
 
 * gradle引用
