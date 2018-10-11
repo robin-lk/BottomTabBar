@@ -44,9 +44,13 @@ public class TabItemLayout extends LinearLayout {
     public void initData(TabItem item) {
         this.mItem = item;
         mIcon.setImageResource(item.getIcItem());
-        mTxt.setText(item.getTxtItem());
-        mTxt.setTextSize(item.getTxtSize());
-        reTextColor();
+        if (!getResources().getString(item.getTxtItem()).equals(getResources().getString(R.string.txt_null))) {
+            mTxt.setText(item.getTxtItem());
+            mTxt.setTextSize(item.getTxtSize());
+            reTextColor();
+        } else {
+            mTxt.setVisibility(GONE);
+        }
     }
 
     public void reTextColor() {

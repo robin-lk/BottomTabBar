@@ -3,22 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:orientation="vertical">
 
     <ImageView
-        android:scaleType="center"
         android:id="@+id/tat_icon"
-        tools:ignore="ContentDescription"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        tools:ignore="ContentDescription" />
 
     <TextView
-        android:gravity="center"
         android:id="@+id/tab_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp" />
+        android:gravity="center" />
 
 </LinearLayout>

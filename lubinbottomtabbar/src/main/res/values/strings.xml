@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tabbar</string>
+    <string name="txt_null">不需要文字——null txt</string>
 </resources>
