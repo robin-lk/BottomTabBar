@@ -7,10 +7,9 @@
 
 * gradle引用
 
-``
-    implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
-``
-
+```markdown
+implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
+```
 ## (一)单独使用LubinBottomTabBar
 
 * xml布局
