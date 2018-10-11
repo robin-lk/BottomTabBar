@@ -11,4 +11,14 @@
     implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
 ``
 
+## (一)单独使用LubinBottomTabBar
+
+* xml布局
+
+```xml
+    <com.lubin.layout.tabbar.LubinBottomTabBar
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+```
 
