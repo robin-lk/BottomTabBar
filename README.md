@@ -9,6 +9,7 @@
 * ![](https://img.shields.io/badge/version-v0.5.1-519dd9.svg)
 
 * [![](https://img.shields.io/badge/{version}-{v0.5.1}-{green}.svg)](https://bintray.com/lubin/LubinBottomTabBar/LubinBottomTabBar)
+![](https://img.shields.io/badge/{version}-{v0.5.1}-{green}.svg)
 
 ```groovy
 implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
