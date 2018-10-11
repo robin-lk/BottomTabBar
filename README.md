@@ -153,7 +153,7 @@ class MyActivyty{
         android:layout_above="@id/tab_bar" />
 ```
   ````markdown
-    //创建
+    //创建要在LubinBottomTabBar initData() 之前完成
     //R.id.layout_conter  FrameLayout布局id
     tabbarHelper = new TabbarHelper<>(this, getSupportFragmentManager(), R.id.layout_conter, this);
     
