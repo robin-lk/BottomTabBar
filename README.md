@@ -6,9 +6,9 @@
    ![](img/GIF001.gif)
 ## 快速使用
 
-* ![](https://img.shields.io/badge/version-v0.5.1-519dd9.svg)
+* [![](https://img.shields.io/badge/version-v0.5.1-519dd9.svg)]
 
-* gradle引用
+* [![](https://img.shields.io/green/download-v0.5.1-519dd9.svg)](https://bintray.com/lubin/LubinBottomTabBar/LubinBottomTabBar)
 
 ```groovy
 implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
