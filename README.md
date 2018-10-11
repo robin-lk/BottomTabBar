@@ -6,5 +6,8 @@
 ## 快速使用
 
 * gradle引用
-`implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'`
+``
+implementation 'com.lubin.layout.tabbar:lubinbottomtabbar:0.5.1'
+``
+
 
