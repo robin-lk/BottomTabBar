@@ -165,11 +165,20 @@ class MyActivyty{
 ### (二)配合TabbarHelper使用LubinBottomTabBar
   TabbarHelper是fragment切换帮助管理工具
   
-  ````cmake
+  在xml布局中添加
+  ```xml
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_bar" />
+```
+  ````markdown
     //创建
-    
+    //R.id.layout_conter  FrameLayout布局id
     tabbarHelper = new TabbarHelper<>(this, getSupportFragmentManager(), R.id.layout_conter, this);
-    //add 第一个参数int，从0逐加，add个数与TabItem个数要对应好；第二个参数按照规则(Fragment.clss,string类型)
+    
+    //add 第一个参数int，从0逐加，add个数与TabItem个数要对应好；第二个参数按照规则(Fragment.clss,string类型
     tabbarHelper.add(0, new TabbarHelper.Tab<Integer>(HomeFragment.class, R.string.bottom_bar_home))
             .add(1, new TabbarHelper.Tab<Integer>(ShoppingFragment.class, R.string.bottom_bar_shoppping))
             .add(2, new TabbarHelper.Tab<Integer>(HomeFragment.class, R.string.bottom_bar_home))
