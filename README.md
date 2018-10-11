@@ -121,34 +121,6 @@ class MyActivyty{
  * TabItem（子项资源赋值）
  
 ```markdown
-    /**
-     * 加载数据
-     *
-     * @param txtItem 文本资源id
-     * @param icItem  图片资源id
-     * @param extra   额外信息
-     */
-    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, String extra)
-
-    /**
-     * 加载数据
-     *
-     * @param txtItem  文本资源id
-     * @param icItem   图片资源id
-     * @param txtColor 文字颜色
-     * @param extra    额外信息
-     */
-    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @ColorRes int[] txtColor, String extra)
-    
-    /**
-     * 加载数据
-     *
-     * @param txtItem 文本资源id
-     * @param icItem  图片资源id
-     * @param txtSize 文字大小
-     * @param extra   额外信息
-     */
-    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @Size float txtSize, String extra) 
 
     /**
      * 加载数据
@@ -160,6 +132,13 @@ class MyActivyty{
      * @param extra    额外信息
      */
     public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @Size float txtSize, @ColorRes int[] txtColor, String extra)
+    
+    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, String extra)
+
+    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @ColorRes int[] txtColor, String extra)
+    
+    public TabItem(@StringRes int txtItem, @DrawableRes int icItem, @Size float txtSize, String extra) 
+
 ```
 
 ### (二)配合TabbarHelper使用LubinBottomTabBar
