@@ -7,7 +7,7 @@
 ## 快速使用
 
 * [![](https://img.shields.io/badge/version-v0.5.1-519dd9.svg)](https://bintray.com/lubin/LubinBottomTabBar/LubinBottomTabBar)
-[![](https://img.shields.io/badge/download-v0.5.2-green.svg)](https://bintray.com/lubin/LubinBottomTabBar/LubinBottomTabBar)
+[ ![Download](https://api.bintray.com/packages/lubin/LubinBottomTabBar/LubinBottomTabBar/images/download.svg) ](https://bintray.com/lubin/LubinBottomTabBar/LubinBottomTabBar/_latestVersion)
 ![](https://img.shields.io/badge/author-Lubin-red.svg)
 
 ```groovy
