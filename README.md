@@ -68,7 +68,7 @@ class MyActivyty{
         /**
         *  TabItem 添加资源，添加一个TabItem就是底部有一个icon
         */
-        tabItems.add(new TabItem(R.string.us, R.drawable.ic_01,new int[]{R.color.colorAccent,R.color.colorPrimary}, ""));
+        tabItems.add(new TabItem(R.string.us, R.drawable.ic_01,new int[]{R.color.bottom_bar_txt_select,R.color.bottom_bar_txt_default}, ""));
         /**
         * 获取lubinbottomtabbar后，然后赋值 
         */
